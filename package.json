@@ -1,0 +1,22 @@
+{
+  "name": "instabotbase",
+  "version": "1.0.0",
+  "description": "code for dphs-daejeon instagram",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dphs",
+    "chatbot",
+    "instagram"
+  ],
+  "author": "damie",
+  "license": "MIT",
+  "dependencies": {
+    "@androz2091/insta.js": "^1.6.1",
+    "dotenv": "^16.0.1",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
