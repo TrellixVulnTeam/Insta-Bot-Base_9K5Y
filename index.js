@@ -32,7 +32,7 @@ client.on('connected', () => {
 //set commands
 client.on('messageCreate', (message) => { 
     if(message.content === prefix + 'ping'){
-        message.chat.sendMessage('pong');
+        message.chat.sendMessage('pong!');
     };
 
     if (message.content === prefix + 'uptime'){
