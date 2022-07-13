@@ -6,15 +6,15 @@ require('dotenv').config();
 //get ID, PW, Admin ID from .env
 const {prefix, ID, PW, adminList, adminChatId} = process.env;
 
-//어드민 지정
+//set administrator
 const admin = adminList.split('/')
 
 //set Welcome Message
-const welcomeMsg = "님 환영해요!"
+const welcomeMsg = ", Welcome!"
 
 //log message in console when login successed
 client.on('connected', () => {
-    console.log(`${client.user.username}에 로그인을 성공했습니다.`);
+    console.log(`Bot Is Ready!`);
 });
 
 //set commands
@@ -24,7 +24,7 @@ client.on('messageCreate', (message) => {
     };
 });
 
-//Reply to chat requests
+//reply to chat requests
 client.on('pendingRequest', (chat) => {
     chat.approve;
     chat.sendMessage(chat.name + welcomeMsg);
